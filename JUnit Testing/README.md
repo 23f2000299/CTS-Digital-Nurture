@@ -38,7 +38,6 @@ TDD-JUnit5-Mockito
 ## Description
 
 This exercise demonstrates different JUnit 5 assertions.
-
 Assertions used:
 
 - `assertEquals()`
@@ -46,20 +45,14 @@ Assertions used:
 - `assertFalse()`
 - `assertNull()`
 - `assertNotNull()`
-
-
 ## Implementation
-
 The `AssertionEx` test class validates different conditions using JUnit 5 assertion methods.
-
 Example:
-
 java
 assertEquals(8, c.add(3,5));
-
 assertTrue(c.val1(2)<c.val1(3));
-
 assertFalse(c.val1(3)<c.val1(2));
+
 Exercise 4: Arrange-Act-Assert (AAA) Pattern
 Description
 
@@ -70,7 +63,6 @@ Arrange
 Creating objects and preparing required data.
 
 Example:
-
 static Calculator c;
 
 @BeforeAll
@@ -79,14 +71,12 @@ static void setup()
     c = new Calculator();
 }
 Act
-
 Calling the method that needs testing.
 
 Example:
 
 c.add(2,5);
 Assert
-
 Checking whether the actual output matches the expected output.
 
 Example:
@@ -99,7 +89,6 @@ Test fixtures are used to prepare and clean up resources before and after tests.
 Used annotations:
 
 BeforeAll
-
 Runs once before all test cases.
 
 @BeforeAll
