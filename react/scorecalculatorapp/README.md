@@ -1,18 +1,101 @@
-# React + Vite
+# Score Calculator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Overview
 
-Currently, two official plugins are available:
+**Score Calculator App** is a simple React application built using **Vite**. It demonstrates the use of **functional components**, **props**, and **external CSS styling**. The application calculates and displays the average score of a student based on the total marks and the number of subjects.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Objectives
 
-## React Compiler
+* Understand React functional components.
+* Pass data using props.
+* Calculate and display the average score of a student.
+* Apply external CSS styles to React components.
+* Render React components using `App.jsx`.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Features
 
-Note: This will impact Vite dev & build performances.
+* Displays student details such as Name and School.
+* Accepts Total Marks and Number of Subjects as props.
+* Calculates the average score.
+* Uses reusable React functional components.
+* Styled using an external CSS file.
 
-## Expanding the Oxlint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+* React
+* Vite
+* JavaScript (ES6)
+* CSS
+
+## Project Structure
+
+```text
+scorecalculatorapp/
+│── src/
+│   ├── Components/
+│   │   └── CalculateScore.jsx
+│   ├── Stylesheets/
+│   │   └── mystyle.css
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── public/
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+
+2. Navigate to the project folder:
+
+```bash
+cd scorecalculatorapp
+```
+
+3. Install the required dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
+
+```bash
+npm run dev
+```
+
+5. Open the URL displayed in the terminal (typically `http://localhost:5173`) in your browser.
+
+## Sample Input
+
+| Property           | Value             |
+| ------------------ | ----------------- |
+| Name               | John              |
+| School             | ABC Public School |
+| Total Marks        | 480               |
+| Number of Subjects | 5                 |
+
+## Sample Output
+
+```
+Student Score Calculator
+
+Name: John
+School: ABC Public School
+Total Marks: 480
+Number of Subjects: 5
+
+Average Score: 96.00
+```
+
+<img width="469" height="320" alt="image" src="https://github.com/user-attachments/assets/19b57108-1551-4e58-8987-c8acbb4656d9" />
+
+
+
